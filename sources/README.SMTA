@@ -1,0 +1,102 @@
+                    SMTA Application
+
+What is it
+-----------
+
+SMTA is an application based on MediaSDK and Intel HD Graphics driver running on Linux platform.
+It can be used as sample codes to transcode local and network streaming.
+
+
+Pre-requisites
+---------------
+
+The Linux Server Graphics driver must be installed before building Linear
+Transcoder.
+
+
+Source Code Contents
+---------------------
+src [XCODER core components]
+    base
+    video
+    formats
+    common.mk
+    Makefile
+app [SMTA Samples]
+    AudioControl
+    AudioOutput
+    AudioParams
+    AudioPipeline
+    AudioSource
+    BitstreamReader
+    BitstreamWriter
+    ESAudioSink
+    ESAudioSource
+    ffmpeg_utils
+    FileBitstream
+    LiveBitstreamSink
+    LiveESBitstreamSink
+    LiveESBitstreamSource
+    LiveMediaSink
+    LiveMuxedBitstreamSource
+    LiveOutput
+    main
+    MuxedAudioSource
+    MuxedBitstreamSink
+    MuxedSource
+    MuxingAudioSink
+    MuxingOutput
+    pipeline_transcode
+    Predator
+    RtspClientController
+    sample_utils
+    SinkWrap
+    SMTA_RTSPClient
+    Statistics
+    StreamDataReader
+    StreamingEnvironment
+    SyncPoint
+    transcode_utils
+imports [third party code]
+    live555
+    platform
+    ipp
+dist [distribution binaries]
+
+
+How to build
+-------------
+
+    1) cp ffmpeg-3.0.1.tar.bz2 to <source_root_dir>/imports/ffmpeg/
+    2) cd <source_root_dir>
+    3) make smta
+
+All the binaries will be built and copied into "dist" directory.
+
+
+How to run
+----------
+
+Below are the steps to run sample RTSPServer binaries:
+
+    1) cd dist
+    2) ./RTSPServer rtsp_execute.xml (rtsp_execute.xml please refer to SMTA_User_Guide.pdf)
+
+Below are the steps to run sample StreamingMediaTranscoder binaries:
+
+    1) cd dist
+    2) ./StreamingMediaTranscoder -params -i::h264::rtsp rtsp://10.239.119.216:5554/Sample.ts -o::h265::rtp::ts 10.239.119.212 62554 -avp 33 -h 1080 -w 1920 -rc vbr
+
+Documentation
+-------------
+
+Refer to doc/ directory.
+
+
+Licenses
+--------
+
+The SMTA utilizes live555 libraries under LGPL license.
+More information can be found at
+http://www.live555.com/
+

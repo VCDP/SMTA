@@ -1,0 +1,54 @@
+The following materials are defined as "Developer Tools" and are subject
+to the terms and conditions of the End User License Agreement:
+
+<InstallationFolder>/lin_x64/StreamingMediaTranscoder
+<InstallationFolder>/lin_x64/libAudioTranscoder.so
+<InstallationFolder>/lin_x64/RTSPServer
+<InstallationFolder>/lin_x64/libavcodec.so.55
+<InstallationFolder>/lin_x64/libformat.so.55
+<InstallationFolder>/lin_x64/libavutil.so.52
+<InstallationFolder>/lin_x64/libxcodeaudio.so
+<InstallationFolder>/lin_x64/libxcodebase.so
+<InstallationFolder>/lin_x64/libxcodevideo.so
+<InstallationFolder>/lin_x64/rtsp_execute.xml
+
+<InstallationFolder>/doc/SMTA_User_Guide.pdf
+
+<InstallationFolder>/on_demand/*
+This includes any files under the "<InstallationFolder>/on_demand" folder
+
+
+
+The following materials are defined as "Intel OBL Streaming Media Transcoder Application Sample Source License" and are subject
+to the terms and conditions of the End User License Agreement:
+
+<InstallationFolder>/sources/imports/platform/*
+This includes any files under the "<InstallationFolder>/sources/imports/platform" folder
+
+<InstallationFolder>/sources/libxcode/*
+This includes any files under the "<InstallationFolder>/sources/libxcode" folder
+
+<InstallationFolder>/sources/app/msdk_smta/* (excluding files under subfolders AudioTranscoder)
+This includes any files directly under the "<InstallationFolder>/sources/app/msdk_smta" folder, but excluding files in subfolders AudioTranscoder.
+
+
+
+The following materials are defined as "GNU Gneneral Public License v2.0 or later" and are subject to the terms and conditions in the files:
+
+<InstallationFolder>/sources/app/smta_rtsp_server/*
+This includes any files under the "<InstallationFolder>/sources/app/smta_rtsp_server/*" folder.
+
+<InstallationFolder>/sources/imports/* (excluding files under subfolers platform)
+This includes any files under the "<InstallationFolder>/sources/imports" folder, but excluding files in subfolders platform.
+The software components present under the "<InstallationFolder>/sources/imports" folder(excluding files under subfolers platform) are third party open source components and are subject to the terms and conditions specified in their respective license files. Refer to the "Third-part Components" section of the SMTA User Guide to view the list of these components, their respective copyright owners and the paths to their license files. 
+
+
+
+The following materials are defined as "Intel OBL Media SDK EULA (SDK and Single User)" and are subject to the terms and conditions in the files:
+
+<InstallationFolder>/sources/app/msdk_smta/AudioTranscoder
+This includes any files directly under the "<InstallationFolder>/sources/app/msdk_smta/AudioTranscoder".
+
+
+
+
